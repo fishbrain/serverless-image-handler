@@ -31,7 +31,7 @@ To build the Lambda package, use the `serverless-image-handler` image that was b
 - Now build the distributable
 
 ```bash
-docker run -it --rm --volume $PWD:/lambda serverless-image-handler source-bucket-base-name
+docker run -it --rm --volume $PWD:/lambda serverless-image-handler source-bucket-base-name $VERSION
 ```
 
 `source-bucket-base-name` should be the base name for the S3 bucket location where the template will source the Lambda code from.
