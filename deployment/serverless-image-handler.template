@@ -525,7 +525,7 @@ Resources:
             # https://github.com/awslabs/serverless-image-handler/issues/32
             # Headers:
             #   - Accept
-            QueryString: 'false'
+            QueryString: 'true'
             Cookies:
               Forward: none
           ViewerProtocolPolicy: https-only
