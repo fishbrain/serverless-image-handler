@@ -387,7 +387,7 @@ Resources:
           - !Ref OriginS3BucketRegion
           # SO-SIH-155 - 07/16/2018 - Rekognition integration
           # Adding env variable for AWS Rekognition
-          REKOGNITION_REGION: us-east-1
+          REKOGNITION_REGION: !Ref 'AWS::Region'
           ENABLE_CORS: !Ref EnableCors
           CORS_ORIGIN: !Ref CorsOrig
           SEND_ANONYMOUS_DATA: !FindInMap
