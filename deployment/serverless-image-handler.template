@@ -791,3 +791,8 @@ Outputs:
   CorsOrigin:
     Description: 'If enabled, allow CORS from this origin.'
     Value: !Ref CorsOrig
+  CloudFrontDomain:
+    Description: 'Domain name of image handler distribution'
+    Value: !GetAtt
+      - ImageHandlerDistribution
+      - DomainName
