@@ -35,8 +35,8 @@ RUN alias sudo='env PATH=$PATH' && \
   pip install --upgrade virtualenv
 
 # pycurl
-RUN yum install -y nss-devel
-ENV PYCURL_SSL_LIBRARY=nss
+RUN yum install -y openssl-devel
+ENV PYCURL_SSL_LIBRARY=openssl
 
 RUN mkdir /lambda
 VOLUME /lambda
